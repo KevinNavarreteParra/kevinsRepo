@@ -1,6 +1,8 @@
 # `kevinsRepo`
 
 <!-- badges: start -->
+![Last Commit](https://img.shields.io/github/last-commit/KevinNavarreteParra/kevinsRepo.svg)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 This package's goal is threefold:
