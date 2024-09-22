@@ -21,6 +21,6 @@ You can install the development version of `kevinsRepo` from [GitHub](https://gi
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("knavarrete-noble/kevinsRepo")
+devtools::install_github("KevinNavarreteParra/kevinsRepo")
 ```
 
