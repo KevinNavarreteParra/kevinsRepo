@@ -4,8 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Kevin", "Navarrete-Parra", "navark4@unlv.nevada.edu", role = c("aut", "cre"))
 Description: This package has three purposes: 1) to store utility functions I use frequently, 2) to store my data, and 3) to provide a testing ground for new functions I develop and utilize. Please note that the functions and data in this package are not guaranteed to be bug-free or optimized. This package is for personal use only, and everything in it should be assumed to be under development.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: Apache License (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
