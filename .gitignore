@@ -50,3 +50,9 @@ rsconnect/
 ^LICENSE\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+
+# codecov files
+codecov.yml
+codecov
+codecov.*
+codecove.*.sig
