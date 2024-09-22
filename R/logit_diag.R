@@ -5,7 +5,7 @@
 #' @param counter Integer corresponding to the model being evaluated
 #'
 #' @return A series of diagnostic checks for a logistic regression model exported to the global environment
-#' @export
+#' @export logit_diag
 #'
 #' @importFrom rcompanion nagelkerke
 #' @importFrom ResourceSelection hoslem.test

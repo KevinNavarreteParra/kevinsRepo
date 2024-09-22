@@ -3,7 +3,7 @@
 #' @param model A logistic regression model of class glm
 #'
 #' @return A matrix with exponentiated coefficients and confidence intervals
-#' @export
+#' @export ors
 #'
 #' @examples
 #' # Example data

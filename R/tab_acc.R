@@ -3,10 +3,9 @@
 #' @param class.obj A confusion matrix of class table
 #'
 #' @return A character string of the accuracy of the confusion matrix
-#' @export
+#' @export tab_acc
 #'
 #' @examples
-#'
 #' # Example data
 #' data <- data.frame(y = c(1, 0, 1, 0, 1, 0, 1, 0, 1, 0),
 #'                   x = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
