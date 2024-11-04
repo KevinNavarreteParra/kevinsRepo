@@ -7,6 +7,7 @@
 #' @param title A character string to customize the title of the bingo card
 #' @param file_type A character string indicating the file type to save the bingo card as. Default is '.pdf', but can also be '.png', '.jpeg', or '.svg', among others supported by the `ggplot2::ggsave` function.
 #' @param save A logical value indicating whether or not to save the bingo cards. Default is FALSE.
+#' @param text_size A numeric value indicating the size of the text on the bingo card. Default is 2.
 #'
 #' @details
 #' This function repurposes code found in Quang Nguyen's blog post on creating bingo cards using the ggplot2 package. The original blog post can be found [on his blog](https://qntkhvn.netlify.app/projects/bingo). I've updated the original code to include additional parameters as well as the additional string wrapping functionality to ensure that the text fits within the bingo card cells.
@@ -17,7 +18,7 @@
 #' @examples
 #' # Create a bingo card with the default parameters
 #' make_bingo(letters)
-make_bingo <- function(str, wrap = 20, n_cards = 5, free_space = "Free", title = "Bingo!", file_type = ".pdf", save = FALSE) {
+make_bingo <- function(str, wrap = 20, n_cards = 5, free_space = "Free", title = "Bingo!", file_type = ".pdf", save = FALSE, text_size = 2) {
 
   if(!is.character(str)) {
     stop("str must be a character string")
@@ -40,14 +41,14 @@ make_bingo <- function(str, wrap = 20, n_cards = 5, free_space = "Free", title =
   plots <- list()
 
   for(i in 1:n_cards){
-      tibble::tibble(what = sample(str, 25),
+      tibble::tibble(values = sample(str, 25),
                      row = rep(1:5, 5),
                      col = rep(1:5, each = 5)) %>%
-      dplyr::mutate(what = ifelse(row == 3 & col == 3,
-                           free_space, what)) %>%
+      dplyr::mutate(values = ifelse(row == 3 & col == 3,
+                           free_space, values)) %>%
       ggplot2::ggplot(ggplot2::aes(row, col)) +
       ggplot2::geom_tile(color = "black", fill = "white") +
-      ggplot2::geom_text(ggplot2::aes(label = what), size = 2) +
+      ggplot2::geom_text(ggplot2::aes(label = values), size = text_size) +
       ggplot2::coord_fixed() +
       ggplot2::theme_void() +
       ggplot2::ggtitle(title) +

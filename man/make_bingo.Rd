@@ -11,7 +11,8 @@ make_bingo(
   free_space = "Free",
   title = "Bingo!",
   file_type = ".pdf",
-  save = FALSE
+  save = FALSE,
+  text_size = 2
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ make_bingo(
 \item{file_type}{A character string indicating the file type to save the bingo card as. Default is '.pdf', but can also be '.png', '.jpeg', or '.svg', among others supported by the \code{ggplot2::ggsave} function.}
 
 \item{save}{A logical value indicating whether or not to save the bingo cards. Default is FALSE.}
+
+\item{text_size}{A numeric value indicating the size of the text on the bingo card. Default is 2.}
 }
 \value{
 A ggplot object of the bingo card(s) with the specified contents
