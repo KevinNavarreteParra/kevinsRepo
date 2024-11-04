@@ -9,7 +9,7 @@
 #' @param save A logical value indicating whether or not to save the bingo cards. Default is FALSE.
 #'
 #' @details
-#' This function repurposes code found in Quang Nguyen's blog post on creating bingo cards using the ggplot2 package. The original blog post can be found at https://qntkhvn.netlify.app/projects/bingo. I've updated the original code to include additional parameters as well as the additional string wrapping functionality to ensure that the text fits within the bingo card cells.
+#' This function repurposes code found in Quang Nguyen's blog post on creating bingo cards using the ggplot2 package. The original blog post can be found [on his blog](https://qntkhvn.netlify.app/projects/bingo). I've updated the original code to include additional parameters as well as the additional string wrapping functionality to ensure that the text fits within the bingo card cells.
 #'
 #' @return A ggplot object of the bingo card(s) with the specified contents
 #' @export

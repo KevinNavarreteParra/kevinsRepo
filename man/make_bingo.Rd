@@ -36,7 +36,7 @@ A ggplot object of the bingo card(s) with the specified contents
 Make a bingo card
 }
 \details{
-This function repurposes code found in Quang Nguyen's blog post on creating bingo cards using the ggplot2 package. The original blog post can be found at https://qntkhvn.netlify.app/projects/bingo. I've updated the original code to include additional parameters as well as the additional string wrapping functionality to ensure that the text fits within the bingo card cells.
+This function repurposes code found in Quang Nguyen's blog post on creating bingo cards using the ggplot2 package. The original blog post can be found \href{https://qntkhvn.netlify.app/projects/bingo}{on his blog}. I've updated the original code to include additional parameters as well as the additional string wrapping functionality to ensure that the text fits within the bingo card cells.
 }
 \examples{
 # Create a bingo card with the default parameters
