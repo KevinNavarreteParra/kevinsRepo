@@ -2,9 +2,9 @@
 % Please edit documentation in R/logit_diag.R
 \name{logit_diag}
 \alias{logit_diag}
-\title{Title: Common Logistic Regression Diagnostic Checks}
+\title{Common Logistic Regression Diagnostic Checks}
 \usage{
-logit_diag(model, model_name, counter)
+logit_diag(model, new_data)
 }
 \arguments{
 \item{model}{A logit model of class glm}
@@ -17,7 +17,7 @@ logit_diag(model, model_name, counter)
 A series of diagnostic checks for a logistic regression model exported to the global environment
 }
 \description{
-Title: Common Logistic Regression Diagnostic Checks
+Common Logistic Regression Diagnostic Checks
 }
 \examples{
 data <- data.frame(y = c(1, 0, 1, 0, 1, 0, 1, 0, 1, 0),
@@ -26,5 +26,9 @@ data <- data.frame(y = c(1, 0, 1, 0, 1, 0, 1, 0, 1, 0),
 
 model <- glm(y ~ x1 + x2, data = data, family = binomial)
 
-logit_diag(model, "model", 1)
+new_data <- data.frame(x1 = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
+                      x2 = c(10, 9, 8, 7, 6, 5, 4, 3, 2, 1),
+                      y = c(1, 0, 1, 0, 1, 0, 1, 0, 1, 0))
+
+logit_diag(model = model, new_data = new_data)
 }
